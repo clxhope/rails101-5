@@ -25,7 +25,7 @@ class PostsController < ApplicationController
    @post = Post.find(params[:id])
 
    @post.destroy
-   redirect_to group_post_path
+   redirect_to account_posts_path
    flash[:alert] = "Post deleted"
  end
 
